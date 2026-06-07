@@ -1,0 +1,217 @@
+#gogexmd-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  z-index: 2147483647;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #d8dee8;
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.22);
+  overflow: hidden;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#gogexmd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  color: #ffffff;
+  background: #0f172a;
+}
+
+#gogexmd-header button {
+  width: 28px;
+  height: 28px;
+  margin-left: 6px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#gogexmd-body {
+  padding: 12px;
+}
+
+#gogexmd-drop {
+  padding: 16px 12px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px dashed #94a3b8;
+  border-radius: 10px;
+}
+
+#gogexmd-drop.hover {
+  background: #ecfeff;
+  border-color: #0891b2;
+}
+
+.gogexmd-drop-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+#gogexmd-drop label {
+  color: #0369a1;
+  cursor: pointer;
+}
+
+#gogexmd-file {
+  display: none;
+}
+
+.gogexmd-btn {
+  display: block;
+  width: 100%;
+  min-height: 36px;
+  margin-top: 8px;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.gogexmd-btn:hover {
+  background: #eef2f7;
+}
+
+.gogexmd-primary {
+  color: #ffffff;
+  background: #0f766e;
+  border-color: #0f766e;
+}
+
+.gogexmd-primary:hover {
+  background: #115e59;
+}
+
+.gogexmd-danger {
+  color: #ffffff;
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+.gogexmd-danger:hover {
+  background: #991b1b;
+}
+
+#gogexmd-actions,
+#gogexmd-meta {
+  display: none;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#gogexmd-actions .gogexmd-btn {
+  margin-top: 0;
+}
+
+#gogexmd-meta {
+  justify-content: space-between;
+  padding: 8px 10px;
+  color: #475569;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+#gogexmd-status {
+  min-height: 20px;
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+#gogexmd-status.success {
+  color: #047857;
+}
+
+#gogexmd-status.error {
+  color: #b91c1c;
+}
+
+#gogexmd-status.loading {
+  color: #0369a1;
+}
+
+#gogexmd-preview-modal,
+#gogexmd-settings-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.55);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#gogexmd-preview-box,
+#gogexmd-settings-box {
+  width: min(780px, calc(100vw - 40px));
+  max-height: min(760px, calc(100vh - 40px));
+  overflow: auto;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.35);
+}
+
+#gogexmd-settings-box {
+  width: 360px;
+  padding: 14px;
+}
+
+#gogexmd-preview-header,
+#gogexmd-settings-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#gogexmd-preview-header button,
+#gogexmd-settings-header button {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: #f1f5f9;
+  cursor: pointer;
+}
+
+#gogexmd-preview-content {
+  padding: 18px 22px;
+  color: #111827;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#gogexmd-preview-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#gogexmd-preview-content pre {
+  overflow-x: auto;
+}
+
+#gogexmd-preview-footer {
+  padding: 14px 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+#gogexmd-settings-box label {
+  display: block;
+  margin: 12px 0;
+}

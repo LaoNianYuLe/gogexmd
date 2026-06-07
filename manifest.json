@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "gogexmd",
+  "version": "1.0.0",
+  "description": "Secure Markdown importer for X Articles.",
+  "permissions": ["clipboardRead", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
